@@ -1,13 +1,55 @@
 {
+    "metricsUrl" : "https://webhook-staging.atomist.services/atomist/fingerprints",
     "repositories": {
         "spring-rest-seed": [
             "Maven.+",
-            "Spring.+"
+            "Spring.+",
+            "Docker.+",
+            "Travis.+"
         ],
         "$default$": [
             "Maven.+",
-            "Spring.+"
+            "Spring.+",
+            "Docker.+",
+            "Travis.+"
         ]
     },
-    "fingerprints": {}
+    "fingerprints": {
+        "deps": {
+            "name": "MavenDependencies",
+            "description": "",
+            "level": "warning",
+            "status": "success"
+        },
+        "plugins": {
+            "name": "MavenPlugins",
+            "description": "",
+            "level": "warning",
+            "status": "success"
+        },
+        "rest": {
+            "name": "SpringRestMVC",
+            "description": "",            
+            "level": "warning",
+            "status": "failure"
+        },
+        "properties": {
+            "name": "SpringBootApplicationProperties",
+            "description": "",            
+            "level": "warning",
+            "status": "failure"
+        },
+        "docker": {
+            "name": "DockerfileFeature",
+            "description": "",            
+            "level": "warning",
+            "status": "failure"
+        },
+        "travis": {
+            "name": "TravisBuildFileFeature",
+            "description": "",            
+            "level": "warning",
+            "status": "failure"
+        }
+    }
 }
