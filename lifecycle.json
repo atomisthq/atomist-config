@@ -1,0 +1,32 @@
+{
+  "configuration": {
+    "push": {
+      "renderers": [
+        "push",
+        "commit",
+        "tag",
+        "build",
+        "application",
+        "footer"
+      ],
+      "contributors": [
+        "tag",
+        "build",
+        "generic"
+      ],
+      "configuration": {
+        "emoji-style": "atomist",
+        "commit": {
+          "rendering-style": "fingerprint-inline"
+        },
+        "build": {
+          "rendering-style": "decorator"
+        },
+        "generic": {
+          "functions": [
+          ]
+        }
+      }
+    }
+  }
+}
