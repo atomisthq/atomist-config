@@ -1,4 +1,4 @@
-# atomist-config-seed
+# atomist-config
 
 Atomist configuration repository for a GitHub organization.
 
