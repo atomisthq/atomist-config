@@ -1,17 +1,26 @@
 {
     "repositories": {
         "spring-rest-seed": [
+            "Docker.+",
             "Maven.+",
             "Spring.+",
-            "Docker.+",
             "Travis.+"
         ],
         "$default$": [
+            "Docker.+",
             "Maven.+",
             "Spring.+",
-            "Docker.+",
             "Travis.+"
         ]
+    },
+    "snapshotters": {
+        "SpringBootApplicationProperties": {
+            "filePatterns": [
+                "src/main/resources/application.properties",
+                "src/main/resources/bootstrap.properties",
+                "src/main/resources/application-*.properties"
+            ]
+        }
     },
     "fingerprints": {
         "deps": {
@@ -20,33 +29,33 @@
             "level": "warning",
             "status": "success"
         },
+        "docker": {
+            "name": "DockerfileFeature",
+            "description": "",
+            "level": "warning",
+            "status": "failure"
+        },
         "plugins": {
             "name": "MavenPlugins",
             "description": "",
             "level": "warning",
             "status": "success"
         },
-        "rest": {
-            "name": "SpringRestMVC",
-            "description": "",            
-            "level": "warning",
-            "status": "failure"
-        },
         "properties": {
             "name": "SpringBootApplicationProperties",
-            "description": "",            
+            "description": "",
             "level": "warning",
             "status": "failure"
         },
-        "docker": {
-            "name": "DockerfileFeature",
-            "description": "",            
+        "rest": {
+            "name": "SpringRestMVC",
+            "description": "",
             "level": "warning",
             "status": "failure"
         },
         "travis": {
-            "name": "TravisBuildFileFeature",
-            "description": "",            
+            "name": "TravisFeature",
+            "description": "",
             "level": "warning",
             "status": "failure"
         }
