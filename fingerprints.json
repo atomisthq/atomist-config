@@ -6,6 +6,11 @@
             "Spring.+",
             "Travis.+"
         ],
+        "spring-team-handlers": [
+            "Travis.+",
+            "npmDependencies",
+            "Rugs"
+        ],
         "$default$": [
             "Docker.+",
             "Maven.+",
