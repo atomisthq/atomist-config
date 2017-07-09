@@ -15,8 +15,7 @@
             "Docker.+",
             "Maven.+",
             "Spring.+",
-            "Travis.+",
-            "npmDependencies"
+            "Travis.+"
         ]
     },
     "snapshotters": {
