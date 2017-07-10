@@ -4,6 +4,7 @@
       "renderers": [
         "push",
         "commit",
+        "issue",
         "tag",
         "build",
         "application",
