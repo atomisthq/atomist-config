@@ -8,7 +8,6 @@
         "tag",
         "build",
         "application",
-        "k8pod",
         "footer"
       ],
       "contributors": [
@@ -18,17 +17,31 @@
       ],
       "configuration": {
         "emoji-style": "atomist",
-        "commit": {
-          "rendering-style": "fingerprint-inline"
+        "fingerprints": {
+          "about-hint": "false",
+          "render-unchanged": "true",
+          "style": "fingerprint-inline",
+          "data": "${file://fingerprints.json}"
         },
         "build": {
-          "rendering-style": "decorator"
-        },
-        "generic": {
-          "functions": [
-          ]
+          "style": "decorator"
         }
       }
+    }
+  },
+  "pullrequest": {
+    "renderers": [
+      "pullrequest",
+      "commit",
+      "status",
+      "footer"
+    ],
+    "contributors": [
+      "merge",
+      "approve",
+      "delete"
+    ],
+    "configuration": {
     }
   }
 }
