@@ -1,24 +1,9 @@
 {
   "configuration": {
     "push": {
-      "renderers": [
-        "push",
-        "commit",
-        "issue",
-        "tag",
-        "build",
-        "application",
-        "k8pod",
-        "footer"
-      ],
-      "contributors": [
-        "tag",
-        "build",
-        "pullrequest",
-        "generic"
-      ],
       "configuration": {
         "emoji-style": "atomist",
+        "show-statuses-on-push": "true",
         "fingerprints": {
           "about-hint": "false",
           "render-unchanged": "true",
@@ -32,17 +17,6 @@
     }
   },
   "pullrequest": {
-    "renderers": [
-      "pullrequest",
-      "commit",
-      "status",
-      "footer"
-    ],
-    "contributors": [
-      "merge",
-      "approve",
-      "delete"
-    ],
     "configuration": {
     }
   }
